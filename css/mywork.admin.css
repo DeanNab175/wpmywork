@@ -1,0 +1,59 @@
+/**
+ * The Theme Admin Styles
+ * @package MY Work
+ * @since 1.0.0
+ * @version 1.0.0
+ * @file mywork.admin.css
+ *
+ */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ------ Header Optons ------ */
+.wrap {
+    width: 100%;
+    max-width: 960px;
+    background-color: #fff;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.header-preview {
+    width: 300px;
+    float: left;
+}
+
+.header-preview .logo-container {
+    padding: 1em 1em 0.5em;
+    margin-top: 1em;
+    margin-left: 1em;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+}
+
+.header-preview h3 {
+    margin: 0.2em 0 0.5em;
+    font-size: 28px;
+    word-wrap: break-word;
+    line-height: 28px;
+}
+
+.header-preview img {
+    max-width: 100%;
+}
+
+.header-options {
+    width: calc(100% - 300px - 1em * 2);
+    float: left;
+    padding: 0 1em;
+}
+
+.logo-display-choice {
+    padding: 0 0.5em;
+}
+.logo-display-choice:first-child {
+    padding-left: 0;
+}
