@@ -79,7 +79,8 @@ function mwrk_load_scripts() {
  */
 add_action( 'admin_enqueue_scripts', 'mywrk_load_admin_scripts' );
 function mywrk_load_admin_scripts( $hook ) {
-	if( 'toplevel_page_mywork_theme_options' != $hook  ) { return; }
+	//echo $hook;
+	if( 'toplevel_page_mywork_theme_options' != $hook && 'my-work_page_mywork_theme_support' != $hook && 'my-work_page_mywork_contact_form' != $hook  ) { return; }
 
 	# Admin custom styles
 	wp_register_style( 'mywrk-admin', get_template_directory_uri() . '/css/mywork.admin.css', array(), '1.0.0', 'all' );

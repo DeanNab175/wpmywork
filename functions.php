@@ -21,6 +21,8 @@ require get_template_directory() . '/inc/theme-support.php';
 require get_template_directory() . '/inc/function-admin.php';
 // AJAX Functions
 require get_template_directory() . '/inc/ajax.php';
+// Custom Post Type Functions
+require get_template_directory() . '/inc/custom-post-type.php';
 /**
  * =============================================================
  *  Other Scripts

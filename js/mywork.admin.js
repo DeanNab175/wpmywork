@@ -16,6 +16,7 @@
         var previewLogoText = $('#logo-text-preview');
         var previewImage = $('#logo-image-preview');
         var uploadButton = $('#upload-logo-image');
+        var headerOptionForm = $("#header-options-form");
 
         uploadButton.on('click', function(e) {
             e.preventDefault();
@@ -48,19 +49,22 @@
             previewLogoText.text( $(this).val() );
         });
 
-        /*$('#header-options-form').on('submit', function(e) {
-            alert();
+        /*headerOptionForm.on('submit', function(e) {
+            //$( ".logo-display-choice input" ).attr('disabled', 'disabled');
+            var that  = $(this);
+            that.find('input').prop("disabled", true);
+            console.log('Form is submitting..');
         });*/
         $( ".logo-display-choice" ).on( "click", 'input', function() {
-            var checkedInput = $( "input:checked" );
-            if( checkedInput.val() === 'Text' ) {
-                $("#header-options-form").submit();
-                console.log(checkedInput.val());
+            //var checkedInput = $( "input:checked" );
+            if( $(this).val() === 'Text' ) {
+                headerOptionForm.submit();
+                //console.log($(this).val());
             }
 
-            if( checkedInput.val() === 'Image' ) {
-                $("#header-options-form").submit();
-                console.log(checkedInput.val());
+            if( $(this).val() === 'Image' ) {
+                headerOptionForm.submit();
+                //console.log($(this).val());
             }
 
         });

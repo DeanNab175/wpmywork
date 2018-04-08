@@ -8,7 +8,8 @@
  *
  */
 ?>
-<h1>My Work - Theme Options</h1>
+<h1>My Work - Theme Header Options</h1>
+<?php settings_errors(); ?>
 <?php
     $choice  = get_option('logo_display_choice');
     $output = '';
@@ -20,7 +21,6 @@
     }
 ?>
 <div class="wrap clearfix">
-	<?php settings_errors(); ?>
     <div class="header-preview">
         <div class="logo-container">
             <?php if( $choice == 'Text' ) : ?>
