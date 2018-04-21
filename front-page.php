@@ -23,6 +23,7 @@ get_header();
 
 					<!-- typing__module -->
 					<div class="typing__module">
+                        <p>Hello World</p>
 						<div class="typed-strings"><span>I'm a web designer</span><span>I do creative</span><span>I'm a frontend developer</span>
 						</div><span class="typed"></span>
 					</div><!-- End / typing__module -->
