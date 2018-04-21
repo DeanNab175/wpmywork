@@ -10,7 +10,7 @@
 ?>
 
 <!-- footer -->
-<div class="footer">
+<div class="footer bg-footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-lg-6 ">

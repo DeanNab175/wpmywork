@@ -14,7 +14,7 @@ get_header();
 <div class="wil-content">
 
     <!-- Section -->
-    <section class="awe-section">
+    <section class="awe-section bg-header">
         <div class="container">
             <?php $page_title = ( get_post_type( get_the_ID() ) === 'page' ) ? get_the_title() : get_the_title( get_option('page_for_posts', true) ); ?>
             <!-- page-title -->
@@ -30,7 +30,7 @@ get_header();
 
 
     <!-- Section -->
-    <section class="awe-section bg-gray">
+    <section class="awe-section bg-body">
         <div class="container">
             <div class="grid-css grid-css--masonry" data-col-lg="3" data-col-md="2" data-col-sm="2" data-col-xs="1" data-gap="30">
                 <div class="grid__inner mywork-posts-container">

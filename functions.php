@@ -23,6 +23,8 @@ require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/ajax.php';
 // Custom Post Type Functions
 require get_template_directory() . '/inc/custom-post-type.php';
+// Customizer Functions
+require get_template_directory() . '/inc/customizer.php';
 /**
  * =============================================================
  *  Other Scripts
