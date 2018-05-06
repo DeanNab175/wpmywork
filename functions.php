@@ -51,3 +51,13 @@ function mwrk_post_link_attributes($output) {
     $code = 'class="md-btn md-btn--outline-primary"';
     return str_replace('<a href=', '<a '.$code.' href=', $output);
 }
+
+// Custon function to split string with delimiters (',')
+function mwrk_split_text( $str ) {
+	if ( empty($str) ) {
+		return false;
+	}
+	$str = wp_strip_all_tags( $str, true );
+	$arrText = explode(",", $str);
+	return $arrText;
+}
